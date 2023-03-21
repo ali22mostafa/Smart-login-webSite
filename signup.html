@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/icon-256x256.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <title>Sign Up</title>
+    </head>
+    <body>
+        
+        <div class="container   mx-auto text-center my-5 py-5">
+            <div class="container-item mx-auto">
+                <h1 class="font-2">Smart Login System</h1>
+                <input type="text" placeholder="Enter Your Name" class="form-control mb-3" id="upName">
+                <div class="alert alert-danger mb-3 d-none" id="ValidNameUp">
+                    <p>Enter Valid Name</p>
+                </div>
+                <input type="email" placeholder="Enter Your Email" class="form-control mb-3" id="upEmail">
+                <div class="alert alert-danger mb-3 d-none" id="ValidEmailUp">
+                    <p>Enter Valid Email</p>
+                </div>
+                <input type="password" placeholder="Enter Your Password" class="form-control mb-3" id="upPassword">
+                <div class="alert alert-danger mb-3 d-none" id="ValidpassUp">
+                    <p>Enter Valid PassWord</p>
+                </div>
+                <span class="suc-span d-none" id="suc-span" >Success</span>
+                <span class="suc-span d-none" id="exit-span" >email is exist</span>
+
+                <button class="btn btn-outline-info w-100 my-3 item" id="signUpBtm"><a href="" class="spec">Sign Up</a></button>
+                <p class="text-white mb-3">You have an account?
+                    <a href="index.html" class="text-white">Sign in</a>
+                </p>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
