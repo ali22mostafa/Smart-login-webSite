@@ -83,7 +83,7 @@ if (upName != null) {
 }
 
 function validSignUpName() {
-    let reg = /^[A-z][a-z]{2,10} ?[A-z][a-z]{2,10}$/;
+    let reg = /^[A-z][a-z]{2,10}( )?([A-z][a-z]{2,10})?$/;
 
     if (reg.test(upName.value) == true) {
         ValidNameUp.classList.replace("d-block", "d-none");
