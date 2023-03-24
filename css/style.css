@@ -9,6 +9,7 @@ body{
 
 .container{
     box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+    border-radius: 20px;
     width: 55%;
 }
 .container-item{
@@ -69,6 +70,7 @@ nav{
     width: 70%;
     margin: auto;
     padding: .6rem;
+    
   
 }
 .item1 a{
@@ -89,6 +91,8 @@ nav{
 
 .info-user{
     box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+    border-radius: 20px;
+    
     
 }
 .info-user h1{
@@ -117,6 +121,25 @@ nav{
 
 
 /* media */
+
+@media screen and (max-width:954px  )and (min-width:785px) {
+    .container{
+        width: 95%;
+    }
+        .font-1{
+            font-size: 2rem !important;
+        }
+        .font-2{
+            font-size: 2rem !important;
+        }
+       
+        .info-user{
+            width: 65% !important;
+        }
+        .info-user h1 {
+            font-size: 2rem;
+        }
+    }
 @media screen and (max-width:784px) {
 .container{
     width: 95%;
@@ -127,7 +150,11 @@ nav{
     .font-2{
         font-size: 2rem !important;
     }
-    #welcomeUser{
-        font-size: 1.4rem !important; 
+   
+    .info-user{
+        width: 85% !important;
+    }
+    .info-user h1 {
+        font-size: 2rem;
     }
 }

@@ -83,7 +83,7 @@ if (upName != null) {
 }
 
 function validSignUpName() {
-    let reg = /^[A-z][a-z]{2,10}( )?([A-z][a-z]{2,10})?$/;
+    let reg = /^([A-Z]|[a-z]|(@|_|-|#|\.)){2,10}( )?(([A-Z]|[a-z]|(@|_|-|#|\.)){2,10})?( )?(([A-Z]|[a-z]|(@|_|-|#|\.)){2,10})?$/;
 
     if (reg.test(upName.value) == true) {
         ValidNameUp.classList.replace("d-block", "d-none");
@@ -104,7 +104,7 @@ if (upEmail != null) {
     upEmail.addEventListener("blur", validSignUpEmail);
 }
 function validSignUpEmail() {
-    let reg = /^[a-z]{3,10}@[a-z]{2,10}\.[a-z]{2,4}$/;
+    let reg = /^([A-Z]|[a-z]|\.){3,40}@([A-Z]|[a-z]){2,10}\.([A-Z]|[a-z]){2,4}$/;
 
     if (reg.test(upEmail.value) == true) {
         ValidEmailUp.classList.replace("d-block", "d-none");
@@ -125,7 +125,7 @@ if (upPassword != null) {
 }
 
 function validSignUpPass() {
-    let reg = /^@?#?\w{3,9}@?#?$/;
+    let reg = /^(\w|\.|_|-|@|#|\^|%|!){3,40}$/;
 
     if (reg.test(upPassword.value) == true) {
         ValidpassUp.classList.replace("d-block", "d-none");
